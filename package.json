@@ -3,18 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "core-js": "^3.22.2",
+    "less": "^3.5.3",
+    "less-loader": "^6.0.0",
+    "stylus": "^0.57.0",
+    "stylus-loader": "^3.0.2",
+    "swiper": "^5.4.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "less": "^3.0.4",
-    "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
