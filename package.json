@@ -7,14 +7,17 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "core-js": "^3.22.2",
     "less": "^3.5.3",
     "less-loader": "^6.0.0",
+    "mockjs": "^1.1.0",
     "stylus": "^0.57.0",
     "stylus-loader": "^3.0.2",
     "swiper": "^5.4.5",
     "vue": "^2.6.11",
-    "vue-router": "^3.5.3"
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",

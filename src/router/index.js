@@ -45,6 +45,33 @@ const routes = [
     name: "Login",
     component: () => import("../views/Login/Login.vue")
   },
+  {
+    path: "/shop",
+    name: "Shop",
+    component: () => import("../views/Shop/Shop.vue"),
+    children:[
+      {
+        path:'/shop/shopgood',
+        name:"ShopGood",
+        component:() => import("../views/Shop/ShopGood/ShopGood.vue")
+      },
+      {
+        path:'/shop/shopinfo',
+        name:"ShopInfo",
+        component:() => import("../views/Shop/ShopInfo/ShopInfo.vue")
+      },
+      {
+        path:'/shop/shoprating',
+        name:"ShopRating",
+        component:() => import("../views/Shop/ShopRating/ShopRating.vue")
+      },
+      {
+        path:'/shop',
+        name:"ShopDefault",
+        component:() => import("../views/Shop/ShopGood/ShopGood.vue")
+      }
+    ]
+  }
 ]
 
 export default new VueRouter({
